@@ -1,0 +1,11 @@
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Core\bin\Debug\net8.0\LoanSuite.Core.deps.json
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Core\bin\Debug\net8.0\LoanSuite.Core.dll
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Core\bin\Debug\net8.0\LoanSuite.Core.pdb
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Core\obj\Debug\net8.0\LoanSuite.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Core\obj\Debug\net8.0\LoanSuite.Core.AssemblyInfoInputs.cache
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Core\obj\Debug\net8.0\LoanSuite.Core.AssemblyInfo.cs
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Core\obj\Debug\net8.0\LoanSuite.Core.csproj.CoreCompileInputs.cache
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Core\obj\Debug\net8.0\LoanSuite.Core.dll
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Core\obj\Debug\net8.0\refint\LoanSuite.Core.dll
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Core\obj\Debug\net8.0\LoanSuite.Core.pdb
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Core\obj\Debug\net8.0\ref\LoanSuite.Core.dll

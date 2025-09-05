@@ -1,0 +1,17 @@
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\obj\Debug\net8.0\LoanSuite.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\obj\Debug\net8.0\LoanSuite.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\obj\Debug\net8.0\LoanSuite.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\obj\Debug\net8.0\LoanSuite.Infrastructure.AssemblyInfo.cs
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\obj\Debug\net8.0\LoanSuite.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\bin\Debug\net8.0\LoanSuite.Infrastructure.deps.json
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\bin\Debug\net8.0\LoanSuite.Infrastructure.runtimeconfig.json
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\bin\Debug\net8.0\LoanSuite.Infrastructure.dll
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\bin\Debug\net8.0\LoanSuite.Infrastructure.pdb
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\bin\Debug\net8.0\LoanSuite.Core.dll
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\bin\Debug\net8.0\LoanSuite.Core.pdb
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\obj\Debug\net8.0\LoanSuit.250E8039.Up2Date
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\obj\Debug\net8.0\LoanSuite.Infrastructure.dll
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\obj\Debug\net8.0\refint\LoanSuite.Infrastructure.dll
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\obj\Debug\net8.0\LoanSuite.Infrastructure.pdb
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\obj\Debug\net8.0\LoanSuite.Infrastructure.genruntimeconfig.cache
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Infrastructure\obj\Debug\net8.0\ref\LoanSuite.Infrastructure.dll
