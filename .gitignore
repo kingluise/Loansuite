@@ -1,0 +1,42 @@
+# IDE caches
+.vs/
+.vscode/
+.idea/
+
+# Build outputs
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+[Oo]ut/
+publish/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+packages/
+project.lock.json
+
+# Others
+*.log
+*.db
+*.sqlite
+*.mdb
+*.opendb
+*.tmp
+
+# OS junk
+.DS_Store
+Thumbs.db
