@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoanSuite.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf6bb96f19c10114fdf467b319b513c7cc49b577")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoanSuite.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoanSuite.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

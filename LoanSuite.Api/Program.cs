@@ -20,6 +20,7 @@ builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<CustomerService>();
 builder.Services.AddScoped<LoanService>();
 builder.Services.AddScoped<PaymentService>(); // New service registration
+builder.Services.AddScoped<DashboardService>();
 
 // -------------------- Controllers --------------------
 // Add controllers to the service container

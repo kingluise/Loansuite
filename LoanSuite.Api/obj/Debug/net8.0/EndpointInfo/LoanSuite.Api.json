@@ -462,6 +462,18 @@
         }
       }
     },
+    "/api/Dashboard/overview": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Loan/apply": {
       "post": {
         "tags": [

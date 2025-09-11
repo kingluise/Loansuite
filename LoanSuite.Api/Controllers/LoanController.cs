@@ -245,13 +245,15 @@ namespace LoanSuite.Api.Controllers
         }
 
 
-        // ==================== DUE REPAYMENTS ====================
         [Authorize(Roles = "Admin,Operator")]
         [HttpGet("due-repayments")]
         public async Task<IActionResult> GetDueRepayments(
-            [FromQuery] DateTime startDate,
-            [FromQuery] DateTime endDate)
+     [FromQuery] DateTime startDate,
+     [FromQuery] DateTime endDate)
         {
+            // Adjust endDate to include the whole day
+            endDate = endDate.Date.AddDays(1).AddTicks(-1);
+
             var repayments = await _loanService.GetDueRepaymentsAsync(startDate, endDate);
 
             var result = repayments.Select(r => new
@@ -266,6 +268,7 @@ namespace LoanSuite.Api.Controllers
 
             return Ok(result);
         }
+
 
         // ==================== PROFIT ANALYTICS ====================
         [Authorize(Roles = "Admin,Operator")]

@@ -17,9 +17,8 @@ namespace LoanSuite.Api.Services
         }
 
         // ==================== CREATE CUSTOMER ====================
-        public async Task<Customer> CreateCustomerAsync(CreateCustomerRequest request)
+        public async Task<CustomerDto> CreateCustomerAsync(CreateCustomerRequest request)
         {
-            // Prevent duplicate emails
             if (await _context.Customers.AnyAsync(c => c.Email == request.Email))
                 throw new InvalidOperationException("Email already exists.");
 
@@ -59,23 +58,21 @@ namespace LoanSuite.Api.Services
             _context.Customers.Add(customer);
             await _context.SaveChangesAsync();
 
-            return customer;
+            return MapToDto(customer);
         }
 
-        // ==================== UPDATE CUSTOMER (JSON-ONLY) ====================
-        public async Task<Customer?> UpdateCustomerAsync(int customerId, UpdateCustomerRequest request)
+        // ==================== UPDATE CUSTOMER ====================
+        public async Task<CustomerDto?> UpdateCustomerAsync(int customerId, UpdateCustomerRequest request)
         {
             var existingCustomer = await _context.Customers.FindAsync(customerId);
             if (existingCustomer == null) return null;
 
-            // Prevent email duplicates
             if (!string.IsNullOrEmpty(request.Email) &&
                 await _context.Customers.AnyAsync(c => c.Email == request.Email && c.Id != customerId))
             {
                 throw new InvalidOperationException("Email already exists.");
             }
 
-            // Update only provided fields
             if (!string.IsNullOrEmpty(request.FullName))
                 existingCustomer.FullName = request.FullName;
 
@@ -115,7 +112,6 @@ namespace LoanSuite.Api.Services
             if (!string.IsNullOrEmpty(request.BVN))
                 existingCustomer.BVN = request.BVN;
 
-            // Update guarantor info if provided
             if (request.Guarantor != null)
             {
                 if (!string.IsNullOrEmpty(request.Guarantor.FullName))
@@ -135,23 +131,26 @@ namespace LoanSuite.Api.Services
             }
 
             await _context.SaveChangesAsync();
-            return existingCustomer;
+            return MapToDto(existingCustomer);
         }
 
         // ==================== GET CUSTOMER BY ID ====================
-        public async Task<Customer?> GetCustomerByIdAsync(int customerId)
+        public async Task<CustomerDto?> GetCustomerByIdAsync(int customerId)
         {
-            return await _context.Customers.FirstOrDefaultAsync(c => c.Id == customerId);
+            var customer = await _context.Customers.FirstOrDefaultAsync(c => c.Id == customerId);
+            return customer == null ? null : MapToDto(customer);
         }
 
         // ==================== GET ALL CUSTOMERS ====================
-        public async Task<List<Customer>> GetAllCustomersAsync()
+        public async Task<List<CustomerDto>> GetAllCustomersAsync()
         {
-            return await _context.Customers.ToListAsync();
+            return await _context.Customers
+                .Select(c => MapToDto(c))
+                .ToListAsync();
         }
 
-        // ==================== GET CUSTOMERS WITH PAGINATION & SEARCH ====================
-        public async Task<(List<Customer> Customers, int TotalCount)> GetCustomersPagedAsync(
+        // ==================== GET CUSTOMERS WITH PAGINATION ====================
+        public async Task<(List<CustomerDto> Customers, int TotalCount)> GetCustomersPagedAsync(
             int pageNumber, int pageSize, string? searchTerm = null)
         {
             var query = _context.Customers.AsQueryable();
@@ -165,6 +164,7 @@ namespace LoanSuite.Api.Services
                 .OrderBy(c => c.Id)
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
+                .Select(c => MapToDto(c))
                 .ToListAsync();
 
             return (customers, totalCount);
@@ -181,14 +181,13 @@ namespace LoanSuite.Api.Services
             return true;
         }
 
-        // ==================== PRIVATE FILE SAVE METHOD (USED ONLY FOR CREATE) ====================
-        private async Task<string> SaveFileAsync(Microsoft.AspNetCore.Http.IFormFile file)
+        // ==================== PRIVATE HELPERS ====================
+        private async Task<string> SaveFileAsync(IFormFile file)
         {
             if (file == null || file.Length == 0)
                 return string.Empty;
 
             var webRoot = _env.WebRootPath ?? Path.Combine(AppContext.BaseDirectory, "wwwroot");
-
             var uploadsFolder = Path.Combine(webRoot, "uploads", "customers");
             if (!Directory.Exists(uploadsFolder))
                 Directory.CreateDirectory(uploadsFolder);
@@ -200,6 +199,38 @@ namespace LoanSuite.Api.Services
             await file.CopyToAsync(stream);
 
             return Path.Combine("uploads", "customers", uniqueFileName).Replace("\\", "/");
+        }
+
+        private static CustomerDto MapToDto(Customer c)
+        {
+            return new CustomerDto
+            {
+                Id = c.Id,                  // ✅ map entity Id → CustomerId
+                FullName = c.FullName,
+                DateOfBirth = c.DateOfBirth,
+                Gender = c.Gender,
+                MaritalStatus = c.MaritalStatus,
+                ResidentialAddress = c.ResidentialAddress,
+                Email = c.Email,
+                PhoneNumber = c.PhoneNumber,
+                EmploymentStatus = c.EmploymentStatus,
+                MonthlyIncome = c.MonthlyIncome,
+                IdType = c.IdType,
+                IdNumber = c.IdNumber,
+                IdPhotoUrl = c.IdPhotoUrl,
+                PassportPhotoUrl = c.PassportPhotoUrl,
+                NIN = c.NIN,
+                BVN = c.BVN,
+
+                // Guarantor
+                GuarantorFullName = c.GuarantorFullName,
+                GuarantorRelationship = c.GuarantorRelationship,
+                GuarantorAddress = c.GuarantorAddress,
+                GuarantorPhone = c.GuarantorPhone,
+                GuarantorEmail = c.GuarantorEmail,
+
+             
+            };
         }
     }
 }

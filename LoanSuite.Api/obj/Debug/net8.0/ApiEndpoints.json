@@ -290,6 +290,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "LoanSuite.Api.Controllers.DashboardController",
+    "Method": "GetDashboardOverview",
+    "RelativePath": "api/Dashboard/overview",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "LoanSuite.Api.Controllers.LoanController",
     "Method": "GetLoanById",
     "RelativePath": "api/Loan/{loanId}",

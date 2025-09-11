@@ -118,11 +118,13 @@ namespace LoanSuite.Api.Controllers
                     p.LoanId,
                     p.RepaymentScheduleId,
                     p.Amount,
-                    Status = p.Status.ToString(),
+                    p.Status,
                     p.ReviewedAt,
-                    p.ReviewedBy
+                    p.ReviewedBy,
+                    p.FullName // ✅ include borrower full name
                 })
             });
         }
+
     }
 }

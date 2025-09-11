@@ -171,13 +171,20 @@ namespace LoanSuite.Api.Services
         // ==================== GET DUE REPAYMENTS ====================
         public async Task<List<RepaymentSchedule>> GetDueRepaymentsAsync(DateTime startDate, DateTime endDate)
         {
+            // Normalize range
+            startDate = startDate.Date;
+            endDate = endDate.Date.AddDays(1).AddTicks(-1);
+
             return await _context.RepaymentSchedules
                 .Include(r => r.Loan)
                 .ThenInclude(l => l.Customer)
-                .Where(r => r.Status == RepaymentStatus.Pending && r.DueDate >= startDate && r.DueDate <= endDate)
+                .Where(r => r.Status == RepaymentStatus.Pending
+                            && r.DueDate >= startDate
+                            && r.DueDate <= endDate)
                 .OrderBy(r => r.DueDate)
                 .ToListAsync();
         }
+
 
         // ==================== GET PROFIT ANALYTICS ====================
         public async Task<object> GetProfitAnalyticsAsync(

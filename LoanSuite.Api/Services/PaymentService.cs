@@ -14,6 +14,7 @@ namespace LoanSuite.Api.Services
             _context = context;
         }
 
+        // ==================== INITIATE PAYMENT ====================
         public async Task<string> InitiatePaymentAsync(InitiatePaymentRequest request, string loggedBy)
         {
             var loan = await _context.Loans
@@ -54,14 +55,15 @@ namespace LoanSuite.Api.Services
 
                 _context.Payments.Add(payment);
 
-                installment.Status = RepaymentStatus.Paid;
-                installment.PaymentDate = DateTime.UtcNow;
+                // ❌ Remove schedule.Paid update here
+                // installment.Status = RepaymentStatus.Paid;
+                // installment.PaymentDate = DateTime.UtcNow;
             }
 
             try
             {
                 await _context.SaveChangesAsync();
-                return "Payment initiated successfully and installments marked as paid.";
+                return "Payment initiated successfully. Awaiting approval.";
             }
             catch (DbUpdateException ex)
             {
@@ -69,6 +71,7 @@ namespace LoanSuite.Api.Services
             }
         }
 
+        // ==================== APPROVE PAYMENT ====================
         public async Task<Payment?> ApprovePaymentAsync(int paymentId, string reviewedBy)
         {
             var payment = await _context.Payments
@@ -81,6 +84,7 @@ namespace LoanSuite.Api.Services
             payment.ReviewedBy = reviewedBy;
             payment.ReviewedAt = DateTime.UtcNow;
 
+            // ✅ Only mark schedule as paid now
             if (payment.RepaymentSchedule != null)
             {
                 payment.RepaymentSchedule.Status = RepaymentStatus.Paid;
@@ -91,39 +95,67 @@ namespace LoanSuite.Api.Services
             return payment;
         }
 
+        // ==================== REJECT PAYMENT ====================
         public async Task<Payment?> RejectPaymentAsync(int paymentId, string reviewedBy)
         {
-            var payment = await _context.Payments.FindAsync(paymentId);
-            if (payment == null || payment.Status != PaymentStatus.Pending) return null;
+            var payment = await _context.Payments
+                .Include(p => p.RepaymentSchedule)
+                .FirstOrDefaultAsync(p => p.Id == paymentId && p.Status == PaymentStatus.Pending);
+
+            if (payment == null) return null;
 
             payment.Status = PaymentStatus.Rejected;
             payment.ReviewedBy = reviewedBy;
             payment.ReviewedAt = DateTime.UtcNow;
+
+            // ✅ Repayment schedule stays Pending since payment is rejected
+            if (payment.RepaymentSchedule != null)
+            {
+                payment.RepaymentSchedule.Status = RepaymentStatus.Pending;
+                payment.RepaymentSchedule.PaymentDate = null;
+            }
 
             await _context.SaveChangesAsync();
             return payment;
         }
 
         // ==================== GET PAYMENTS WITH PAGINATION ====================
-        public async Task<(IEnumerable<Payment> Payments, int TotalCount)> GetPaymentsAsync(
-            string? status, int page, int pageSize)
+        public async Task<(List<PaymentDto>, int)> GetPaymentsAsync(string? status, int page, int pageSize)
         {
-            var query = _context.Payments.AsQueryable();
+            var query = _context.Payments
+                .Include(p => p.Loan)
+                .ThenInclude(l => l.Customer)
+                .AsQueryable();
 
-            if (!string.IsNullOrEmpty(status) &&
-                Enum.TryParse<PaymentStatus>(status, true, out var parsedStatus))
+            if (!string.IsNullOrEmpty(status))
             {
-                query = query.Where(p => p.Status == parsedStatus);
+                if (Enum.TryParse<PaymentStatus>(status, true, out var parsedStatus))
+                {
+                    query = query.Where(p => p.Status == parsedStatus);
+                }
             }
 
             var totalCount = await query.CountAsync();
 
             var payments = await query
+                .OrderByDescending(p => p.Id)
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
+                .Select(p => new PaymentDto
+                {
+                    Id = p.Id,
+                    LoanId = p.LoanId,
+                    RepaymentScheduleId = p.RepaymentScheduleId,
+                    Amount = p.Amount,
+                    Status = p.Status.ToString(),
+                    ReviewedAt = p.ReviewedAt,
+                    ReviewedBy = p.ReviewedBy,
+                    FullName = p.Loan.Customer.FullName
+                })
                 .ToListAsync();
 
             return (payments, totalCount);
         }
+
     }
 }

@@ -143,3 +143,4 @@ C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Api\obj\Debug\ne
 C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Api\obj\Debug\net8.0\LoanSuite.Api.pdb
 C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Api\obj\Debug\net8.0\LoanSuite.Api.genruntimeconfig.cache
 C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Api\obj\Debug\net8.0\ref\LoanSuite.Api.dll
+C:\Users\wizek\OneDrive\Desktop\LoisFinance\LoanSuite\LoanSuite.Api\obj\Debug\net8.0\LoanSuite.Api.sourcelink.json

@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\models\\paymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\models\\paymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.core\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|solutionrelative:loansuite.core\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\models\\paymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\models\\paymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\services\\loanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\services\\loanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,44 +31,60 @@
       "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\models\\loanrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\models\\loanrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\models\\loandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\models\\loandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.core\\entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|solutionrelative:loansuite.core\\entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\models\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\models\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.core\\entities\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|solutionrelative:loansuite.core\\entities\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\models\\createcustomerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\models\\createcustomerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\models\\updatecustomerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\models\\updatecustomerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\models\\dashboardoverviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\models\\dashboardoverviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Infrastructure\\Migrations\\20250831152040_AddFullNameToUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LoanSuite.Infrastructure\\Migrations\\20250831152040_AddFullNameToUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.core\\entities\\repaymentschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|solutionrelative:loansuite.core\\entities\\repaymentschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.core\\entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|solutionrelative:loansuite.core\\entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\models\\loanrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\models\\loanrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\models\\updatecustomerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\models\\updatecustomerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,20 +107,8 @@
       "RelativeMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|solutionrelative:loansuite.core\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.core\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|solutionrelative:loansuite.core\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B40DDAB6-6FAB-4AF4-9D49-6B546F3A33A1}|LoanSuite.Infrastructure\\LoanSuite.Infrastructure.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B40DDAB6-6FAB-4AF4-9D49-6B546F3A33A1}|LoanSuite.Infrastructure\\LoanSuite.Infrastructure.csproj|solutionrelative:loansuite.infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.core\\entities\\repaymentschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|solutionrelative:loansuite.core\\entities\\repaymentschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Infrastructure\\Migrations\\20250830083327_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,16 +123,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LoanSuite.Infrastructure\\Migrations\\20250829212155_AddRepaymentScheduleIdToPayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\models\\paymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\models\\paymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|solutionrelative:loansuite.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.core\\entities\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CFBFF7-3160-4752-885F-BAF5D8535C05}|LoanSuite.Core\\LoanSuite.Core.csproj|solutionrelative:loansuite.core\\entities\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7609356A-367F-46D2-8C92-10EB5CFB7080}|LoanSuite.Api\\LoanSuite.Api.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.api\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,6 +149,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{B40DDAB6-6FAB-4AF4-9D49-6B546F3A33A1}|LoanSuite.Infrastructure\\LoanSuite.Infrastructure.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.infrastructure\\migrations\\20250830103830_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B40DDAB6-6FAB-4AF4-9D49-6B546F3A33A1}|LoanSuite.Infrastructure\\LoanSuite.Infrastructure.csproj|solutionrelative:loansuite.infrastructure\\migrations\\20250830103830_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B40DDAB6-6FAB-4AF4-9D49-6B546F3A33A1}|LoanSuite.Infrastructure\\LoanSuite.Infrastructure.csproj|c:\\users\\wizek\\onedrive\\desktop\\loisfinance\\loansuite\\loansuite.infrastructure\\migrations\\20250831152040_addfullnametouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B40DDAB6-6FAB-4AF4-9D49-6B546F3A33A1}|LoanSuite.Infrastructure\\LoanSuite.Infrastructure.csproj|solutionrelative:loansuite.infrastructure\\migrations\\20250831152040_addfullnametouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -142,73 +162,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoanRequest.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\LoanRequest.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\LoanRequest.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\LoanRequest.cs",
-              "RelativeToolTip": "LoanSuite.Api\\Models\\LoanRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Title": "PaymentDto.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\PaymentDto.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\PaymentDto.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\PaymentDto.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Models\\PaymentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T18:01:41.847Z",
+              "WhenOpened": "2025-09-10T23:01:32.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LoanDto.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\LoanDto.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\LoanDto.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\LoanDto.cs",
-              "RelativeToolTip": "LoanSuite.Api\\Models\\LoanDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T10:46:27.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "LoanService.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\LoanService.cs",
               "RelativeDocumentMoniker": "LoanSuite.Api\\Services\\LoanService.cs",
               "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\LoanService.cs",
               "RelativeToolTip": "LoanSuite.Api\\Services\\LoanService.cs",
-              "ViewState": "AgIAAOoAAAAAAAAAAAAIwAcBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T18:13:08.786Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoanController.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\LoanController.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Api\\Controllers\\LoanController.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\LoanController.cs",
-              "RelativeToolTip": "LoanSuite.Api\\Controllers\\LoanController.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAAAB0BAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "LoanDto.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\LoanDto.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\LoanDto.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\LoanDto.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Models\\LoanDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T18:37:47.573Z",
+              "WhenOpened": "2025-08-29T10:46:27.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\PaymentService.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Services\\PaymentService.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAIwI0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T12:49:12.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "PaymentRequest.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\PaymentRequest.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\PaymentRequest.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\PaymentRequest.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Models\\PaymentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T12:55:56.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "LoanSuite.Api\\Controllers\\PaymentController.cs",
               "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\PaymentController.cs",
               "RelativeToolTip": "LoanSuite.Api\\Controllers\\PaymentController.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAFkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-29T12:52:15.237Z",
               "EditorCaption": ""
@@ -216,19 +244,179 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PaymentService.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\PaymentService.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Api\\Services\\PaymentService.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\PaymentService.cs",
-              "RelativeToolTip": "LoanSuite.Api\\Services\\PaymentService.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA==",
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Payment.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Core\\Entities\\Payment.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Payment.cs",
+              "RelativeToolTip": "LoanSuite.Core\\Entities\\Payment.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T12:49:12.004Z",
+              "WhenOpened": "2025-08-19T13:10:51.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAIwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T14:10:03.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\CustomerService.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Services\\CustomerService.cs",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAAAOcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T13:16:40.242Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateCustomerRequest.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\CreateCustomerRequest.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\CreateCustomerRequest.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\CreateCustomerRequest.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Models\\CreateCustomerRequest.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA3wB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T12:57:49.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\DashboardService.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Services\\DashboardService.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\DashboardService.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Services\\DashboardService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAIwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T17:05:52.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Customers.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Customers.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Core\\Entities\\Customers.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Customers.cs",
+              "RelativeToolTip": "LoanSuite.Core\\Entities\\Customers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T13:05:45.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoanController.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\LoanController.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Controllers\\LoanController.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\LoanController.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Controllers\\LoanController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T18:37:47.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomerDto.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\CustomerDto.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\CustomerDto.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\CustomerDto.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Models\\CustomerDto.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T08:13:15.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DashboardOverviewDto.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\DashboardOverviewDto.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\DashboardOverviewDto.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\DashboardOverviewDto.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Models\\DashboardOverviewDto.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T16:59:32.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RepaymentSchedule.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\RepaymentSchedule.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Core\\Entities\\RepaymentSchedule.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\RepaymentSchedule.cs",
+              "RelativeToolTip": "LoanSuite.Core\\Entities\\RepaymentSchedule.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T13:09:37.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoanRequest.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\LoanRequest.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\LoanRequest.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\LoanRequest.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Models\\LoanRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T18:01:41.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Loan.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Loan.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Core\\Entities\\Loan.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Loan.cs",
+              "RelativeToolTip": "LoanSuite.Core\\Entities\\Loan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T13:08:00.35Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Program.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Program.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T13:48:44.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "LoanSuite.Api\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "LoanSuite.Api\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T17:02:20.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "CreateUserRequest.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\CreateUserRequest.cs",
               "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\CreateUserRequest.cs",
@@ -240,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "UpdateUserRequest.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\UpdateUserRequest.cs",
               "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\UpdateUserRequest.cs",
@@ -252,59 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CustomerService.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\CustomerService.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Api\\Services\\CustomerService.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\CustomerService.cs",
-              "RelativeToolTip": "LoanSuite.Api\\Services\\CustomerService.cs",
-              "ViewState": "AgIAALwAAAAAAAAAAAAQwM0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T13:16:40.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CreateCustomerRequest.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\CreateCustomerRequest.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\CreateCustomerRequest.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\CreateCustomerRequest.cs",
-              "RelativeToolTip": "LoanSuite.Api\\Models\\CreateCustomerRequest.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAwB8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T12:57:49.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Api\\Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "LoanSuite.Api\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T14:10:03.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Loan.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Loan.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Core\\Entities\\Loan.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Loan.cs",
-              "RelativeToolTip": "LoanSuite.Core\\Entities\\Loan.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T13:08:00.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "LoanSuite.Api\\Services\\AuthService.cs",
@@ -316,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "UpdateCustomerRequest.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\UpdateCustomerRequest.cs",
               "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\UpdateCustomerRequest.cs",
@@ -324,12 +460,11 @@
               "RelativeToolTip": "LoanSuite.Api\\Models\\UpdateCustomerRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T12:08:10.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T12:08:10.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 37,
               "Title": "20250831152040_AddFullNameToUser.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Infrastructure\\Migrations\\20250831152040_AddFullNameToUser.cs",
               "RelativeDocumentMoniker": "LoanSuite.Infrastructure\\Migrations\\20250831152040_AddFullNameToUser.cs",
@@ -337,12 +472,11 @@
               "RelativeToolTip": "LoanSuite.Infrastructure\\Migrations\\20250831152040_AddFullNameToUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T15:20:40.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-31T15:20:40.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Users.cs",
               "RelativeDocumentMoniker": "LoanSuite.Core\\Entities\\Users.cs",
@@ -354,19 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Program.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Program.cs",
-              "RelativeToolTip": "LoanSuite.Api\\Program.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAIwIIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T13:48:44.749Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "LoanSuite.Api\\Controllers\\AuthController.cs",
@@ -374,12 +496,11 @@
               "RelativeToolTip": "LoanSuite.Api\\Controllers\\AuthController.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T09:33:21.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T09:33:21.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "20250829225616_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Infrastructure\\Migrations\\20250829225616_InitialCreate.cs",
               "RelativeDocumentMoniker": "LoanSuite.Infrastructure\\Migrations\\20250829225616_InitialCreate.cs",
@@ -391,31 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Payment.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Core\\Entities\\Payment.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Payment.cs",
-              "RelativeToolTip": "LoanSuite.Core\\Entities\\Payment.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T13:10:51.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RepaymentSchedule.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\RepaymentSchedule.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Core\\Entities\\RepaymentSchedule.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\RepaymentSchedule.cs",
-              "RelativeToolTip": "LoanSuite.Core\\Entities\\RepaymentSchedule.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T13:09:37.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "20250830103830_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Infrastructure\\Migrations\\20250830103830_InitialCreate.cs",
               "RelativeDocumentMoniker": "LoanSuite.Infrastructure\\Migrations\\20250830103830_InitialCreate.cs",
@@ -427,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Infrastructure\\AppDbContext.cs",
               "RelativeDocumentMoniker": "LoanSuite.Infrastructure\\AppDbContext.cs",
@@ -439,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "20250830083327_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Infrastructure\\Migrations\\20250830083327_InitialCreate.cs",
               "RelativeDocumentMoniker": "LoanSuite.Infrastructure\\Migrations\\20250830083327_InitialCreate.cs",
@@ -451,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "20250829212155_AddRepaymentScheduleIdToPayments.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Infrastructure\\Migrations\\20250829212155_AddRepaymentScheduleIdToPayments.cs",
               "RelativeDocumentMoniker": "LoanSuite.Infrastructure\\Migrations\\20250829212155_AddRepaymentScheduleIdToPayments.cs",
@@ -463,19 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "PaymentRequest.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\PaymentRequest.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\PaymentRequest.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\PaymentRequest.cs",
-              "RelativeToolTip": "LoanSuite.Api\\Models\\PaymentRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T12:55:56.43Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\appsettings.json",
               "RelativeDocumentMoniker": "LoanSuite.Api\\appsettings.json",
@@ -487,19 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Customers.cs",
-              "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Customers.cs",
-              "RelativeDocumentMoniker": "LoanSuite.Core\\Entities\\Customers.cs",
-              "ToolTip": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\Entities\\Customers.cs",
-              "RelativeToolTip": "LoanSuite.Core\\Entities\\Customers.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA9wCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T13:05:45.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\LoginRequest.cs",
               "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\LoginRequest.cs",
@@ -511,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "LoginResponse.cs",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\Models\\LoginResponse.cs",
               "RelativeDocumentMoniker": "LoanSuite.Api\\Models\\LoginResponse.cs",
@@ -523,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "LoanSuite.Api.csproj",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Api\\LoanSuite.Api.csproj",
               "RelativeDocumentMoniker": "LoanSuite.Api\\LoanSuite.Api.csproj",
@@ -535,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "LoanSuite.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Infrastructure\\LoanSuite.Infrastructure.csproj",
               "RelativeDocumentMoniker": "LoanSuite.Infrastructure\\LoanSuite.Infrastructure.csproj",
@@ -547,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "LoanSuite.Core.csproj",
               "DocumentMoniker": "C:\\Users\\wizek\\OneDrive\\Desktop\\LoisFinance\\LoanSuite\\LoanSuite.Core\\LoanSuite.Core.csproj",
               "RelativeDocumentMoniker": "LoanSuite.Core\\LoanSuite.Core.csproj",

@@ -22,7 +22,7 @@ namespace LoanSuite.Api.Controllers
         public async Task<IActionResult> CreateCustomer([FromForm] CreateCustomerRequest request)
         {
             var customer = await _customerService.CreateCustomerAsync(request);
-            return Ok(customer);
+            return Ok(customer); // already a CustomerDto
         }
 
         // ==================== GET CUSTOMER BY ID ====================
@@ -34,7 +34,7 @@ namespace LoanSuite.Api.Controllers
             if (customer == null)
                 return NotFound(new { message = "Customer not found" });
 
-            return Ok(customer);
+            return Ok(customer); // already a CustomerDto
         }
 
         // ==================== GET CUSTOMERS WITH PAGINATION & SEARCH ====================
@@ -46,11 +46,12 @@ namespace LoanSuite.Api.Controllers
             [FromQuery] string? searchTerm = null)
         {
             var (customers, totalCount) = await _customerService.GetCustomersPagedAsync(pageNumber, pageSize, searchTerm);
+
             return Ok(new { customers, totalCount, pageNumber, pageSize });
         }
 
         // ==================== UPDATE CUSTOMER ====================
-        [Authorize(Roles = "Admin")] // Restrict update to Admin
+        [Authorize(Roles = "Admin")]
         [HttpPut("update/{customerId}")]
         public async Task<IActionResult> UpdateCustomer(int customerId, [FromBody] UpdateCustomerRequest request)
         {
@@ -61,7 +62,7 @@ namespace LoanSuite.Api.Controllers
             if (updatedCustomer == null)
                 return NotFound(new { message = "Customer not found" });
 
-            return Ok(updatedCustomer);
+            return Ok(updatedCustomer); // already a CustomerDto
         }
 
         // ==================== DELETE CUSTOMER ====================
