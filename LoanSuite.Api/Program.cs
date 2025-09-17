@@ -10,44 +10,38 @@ using System.Security.Claims;
 var builder = WebApplication.CreateBuilder(args);
 
 // -------------------- Database --------------------
-// Configure the database connection using SQL Server
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // -------------------- Services --------------------
-// Register all application services for dependency injection
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<CustomerService>();
 builder.Services.AddScoped<LoanService>();
-builder.Services.AddScoped<PaymentService>(); // New service registration
+builder.Services.AddScoped<PaymentService>();
 builder.Services.AddScoped<DashboardService>();
 
 // -------------------- Controllers --------------------
-// Add controllers to the service container
 builder.Services.AddControllers();
 
 // -------------------- CORS Configuration --------------------
-// Add CORS services to the container
-// This defines a named policy that allows requests from your frontend origin
+// ✅ Allow any origin, header, and method (development only)
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontEndOrigin",
-        builder =>
+    options.AddPolicy("AllowAll",
+        policy =>
         {
-            builder.WithOrigins("http://127.0.0.1:5500")
-                   .AllowAnyHeader()
-                   .AllowAnyMethod();
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
         });
 });
 
 // -------------------- Swagger with JWT --------------------
-// Configure Swagger for API documentation and UI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "LoanSuite API", Version = "v1" });
 
-    // Define the security scheme for JWT authentication in Swagger
     var securityScheme = new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -63,7 +57,6 @@ builder.Services.AddSwaggerGen(c =>
         }
     };
 
-    // Add the security definition and requirement to Swagger
     c.AddSecurityDefinition("Bearer", securityScheme);
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
@@ -82,7 +75,7 @@ builder.Services.AddAuthentication(options =>
 })
 .AddJwtBearer(options =>
 {
-    options.RequireHttpsMetadata = false; // Set to true in production
+    options.RequireHttpsMetadata = false; // set true in production
     options.SaveToken = true;
     options.TokenValidationParameters = new TokenValidationParameters
     {
@@ -94,22 +87,17 @@ builder.Services.AddAuthentication(options =>
         ValidAudience = jwt["Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(keyBytes),
         ClockSkew = TimeSpan.Zero,
-
-        // CRITICAL FIX: Map the role claim from the JWT payload to ASP.NET Identity
-        // Your JWT uses the full URI claim type, not "role".
-        NameClaimType = "sub", // Use "sub" or "email" for the user identifier
-        RoleClaimType = ClaimTypes.Role // Correctly maps to "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+        NameClaimType = "sub",
+        RoleClaimType = ClaimTypes.Role
     };
 });
 
 // -------------------- Authorization --------------------
-// Add authorization services
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
 // -------------------- Middleware --------------------
-// Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -118,11 +106,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Use the CORS policy here. It must be called before UseAuthorization().
-app.UseCors("AllowFrontEndOrigin");
+// ✅ Apply AllowAll CORS before authentication
+app.UseCors("AllowAll");
 
-// The order of these two lines is critical.
-// Authentication must come before Authorization.
 app.UseAuthentication();
 app.UseAuthorization();
 

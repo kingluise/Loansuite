@@ -287,5 +287,22 @@ namespace LoanSuite.Api.Controllers
             return Ok(analytics);
         }
 
+        // ==================== DETAILED PROFIT ANALYTICS ====================
+        [Authorize(Roles = "Admin,Operator")]
+        [HttpGet("profit-analytics/detailed")]
+        public async Task<IActionResult> GetDetailedProfitAnalytics(
+            [FromQuery] string filterType, // monthly, quarterly, yearly, custom
+            [FromQuery] int? year,
+            [FromQuery] int? month,
+            [FromQuery] int? quarter,
+            [FromQuery] DateTime? startDate,
+            [FromQuery] DateTime? endDate)
+        {
+            var analytics = await _loanService.GetDetailedProfitAnalyticsAsync(
+                filterType, year, month, quarter, startDate, endDate);
+
+            return Ok(analytics);
+        }
+
     }
 }

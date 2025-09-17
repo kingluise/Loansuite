@@ -266,5 +266,143 @@ namespace LoanSuite.Api.Services
                 ProfitEarned = profitEarned
             };
         }
+        // ==================== GET DETAILED PROFIT ANALYTICS ====================
+        public async Task<object> GetDetailedProfitAnalyticsAsync(
+            string filterType, int? year, int? month, int? quarter,
+            DateTime? startDate, DateTime? endDate)
+        {
+            DateTime rangeStart = DateTime.MinValue;
+            DateTime rangeEnd = DateTime.MaxValue;
+
+            switch (filterType.ToLower())
+            {
+                case "monthly":
+                    if (year == null || month == null) throw new ArgumentException("Year and month are required for monthly filter.");
+                    rangeStart = new DateTime(year.Value, month.Value, 1);
+                    rangeEnd = rangeStart.AddMonths(1).AddDays(-1);
+                    break;
+
+                case "quarterly":
+                    if (year == null || quarter == null) throw new ArgumentException("Year and quarter are required for quarterly filter.");
+                    int startMonth = (quarter.Value - 1) * 3 + 1;
+                    rangeStart = new DateTime(year.Value, startMonth, 1);
+                    rangeEnd = rangeStart.AddMonths(3).AddDays(-1);
+                    break;
+
+                case "yearly":
+                    if (year == null) throw new ArgumentException("Year is required for yearly filter.");
+                    rangeStart = new DateTime(year.Value, 1, 1);
+                    rangeEnd = new DateTime(year.Value, 12, 31);
+                    break;
+
+                case "custom":
+                    if (startDate == null || endDate == null) throw new ArgumentException("Start and end dates are required for custom filter.");
+                    rangeStart = startDate.Value;
+                    rangeEnd = endDate.Value;
+                    break;
+
+                default:
+                    throw new ArgumentException("Invalid filter type. Use monthly, quarterly, yearly, or custom.");
+            }
+
+            // ✅ Base queries
+            var loans = await _context.Loans
+                .Include(l => l.RepaymentSchedules)
+                .Where(l => l.StartDate >= rangeStart && l.StartDate <= rangeEnd)
+                .ToListAsync();
+
+            var repayments = await _context.RepaymentSchedules
+                .Where(r => r.PaymentDate >= rangeStart && r.PaymentDate <= rangeEnd)
+                .ToListAsync();
+
+            // ✅ Totals first
+            var disbursedLoans = loans.Where(l => l.Status == LoanStatus.Approved || l.Status == LoanStatus.Completed).ToList();
+            decimal totalDisbursement = disbursedLoans.Sum(l => l.Principal);
+            decimal totalExpectedInterest = disbursedLoans.Sum(l => l.TotalInterest);
+            decimal totalRepayment = disbursedLoans.Sum(l => l.TotalRepayment);
+
+            decimal profitEarned = repayments
+                .Where(r => r.Status == RepaymentStatus.Paid)
+                .Sum(r => r.InterestPortion);
+
+            var defaultedLoans = loans.Where(l => l.Status == LoanStatus.Defaulted).ToList();
+            int defaultedCount = defaultedLoans.Count;
+            decimal totalDefaultedAmount = defaultedLoans
+                .SelectMany(l => l.RepaymentSchedules)
+                .Where(r => r.Status == RepaymentStatus.Pending)
+                .Sum(r => r.TotalAmount);
+
+            // ✅ Grouping (monthly or weekly)
+            var breakdown = new List<object>();
+
+            if (filterType.ToLower() == "custom" && (rangeEnd - rangeStart).TotalDays < 30)
+            {
+                // Weekly breakdown
+                var weeks = Enumerable.Range(0, (int)Math.Ceiling((rangeEnd - rangeStart).TotalDays / 7.0))
+                    .Select(i => new
+                    {
+                        Start = rangeStart.AddDays(i * 7),
+                        End = rangeStart.AddDays((i + 1) * 7 - 1) <= rangeEnd
+                            ? rangeStart.AddDays((i + 1) * 7 - 1)
+                            : rangeEnd,
+                        Label = $"Week {i + 1}"
+                    });
+
+                foreach (var w in weeks)
+                {
+                    var weekLoans = disbursedLoans.Where(l => l.StartDate >= w.Start && l.StartDate <= w.End).ToList();
+                    var weekRepayments = repayments.Where(r => r.PaymentDate >= w.Start && r.PaymentDate <= w.End).ToList();
+
+                    breakdown.Add(new
+                    {
+                        Period = w.Label,
+                        Disbursement = weekLoans.Sum(l => l.Principal),
+                        ExpectedRepayment = weekLoans.Sum(l => l.TotalRepayment),
+                        ExpectedInterest = weekLoans.Sum(l => l.TotalInterest),
+                        ProfitEarned = weekRepayments.Where(r => r.Status == RepaymentStatus.Paid).Sum(r => r.InterestPortion)
+                    });
+                }
+            }
+            else
+            {
+                // Monthly breakdown
+                var months = Enumerable.Range(0, ((rangeEnd.Year - rangeStart.Year) * 12 + rangeEnd.Month - rangeStart.Month) + 1)
+                    .Select(i => new DateTime(rangeStart.Year, rangeStart.Month, 1).AddMonths(i));
+
+                foreach (var m in months)
+                {
+                    var monthStart = new DateTime(m.Year, m.Month, 1);
+                    var monthEnd = monthStart.AddMonths(1).AddDays(-1);
+
+                    var monthLoans = disbursedLoans.Where(l => l.StartDate >= monthStart && l.StartDate <= monthEnd).ToList();
+                    var monthRepayments = repayments.Where(r => r.PaymentDate >= monthStart && r.PaymentDate <= monthEnd).ToList();
+
+                    breakdown.Add(new
+                    {
+                        Period = $"{m:MMMM yyyy}",
+                        Disbursement = monthLoans.Sum(l => l.Principal),
+                        ExpectedRepayment = monthLoans.Sum(l => l.TotalRepayment),
+                        ExpectedInterest = monthLoans.Sum(l => l.TotalInterest),
+                        ProfitEarned = monthRepayments.Where(r => r.Status == RepaymentStatus.Paid).Sum(r => r.InterestPortion)
+                    });
+                }
+            }
+
+            return new
+            {
+                Period = $"{rangeStart:yyyy-MM-dd} to {rangeEnd:yyyy-MM-dd}",
+                Totals = new
+                {
+                    TotalDisbursement = totalDisbursement,
+                    TotalRepayment = totalRepayment,
+                    TotalExpectedInterest = totalExpectedInterest,
+                    DefaultedLoans = defaultedCount,
+                    TotalDefaultedAmount = totalDefaultedAmount,
+                    ProfitEarned = profitEarned
+                },
+                Breakdown = breakdown
+            };
+        }
+
     }
 }

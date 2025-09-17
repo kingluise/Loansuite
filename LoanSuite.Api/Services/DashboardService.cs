@@ -24,9 +24,9 @@ namespace LoanSuite.Api.Services
             var activeLoans = await _context.Loans
                 .CountAsync(l => l.Status == LoanStatus.Approved);
 
-            // ✅ Overdue comes from RepaymentSchedules, not Loan
-            var overdueLoans = await _context.RepaymentSchedules
-                .CountAsync(r => r.Status == RepaymentStatus.Pending && r.DueDate < DateTime.UtcNow);
+            // ✅ Overdue Loans: Loans that are marked as Defaulted
+            var overdueLoans = await _context.Loans
+                .CountAsync(l => l.Status == LoanStatus.Defaulted);
 
             var totalCustomers = await _context.Customers.CountAsync();
 
@@ -35,12 +35,15 @@ namespace LoanSuite.Api.Services
                 .Where(r => r.DueDate.Date == DateTime.Today && r.Status == RepaymentStatus.Pending)
                 .SumAsync(r => (decimal?)r.TotalAmount) ?? 0;
 
-            // ✅ Principal and Interest portions come from RepaymentSchedule
+            // ✅ Principal and Interest portions only for Approved loans
             var totalPrincipal = await _context.RepaymentSchedules
+                .Where(r => r.Loan.Status == LoanStatus.Approved)
                 .SumAsync(r => (decimal?)r.PrincipalPortion) ?? 0;
 
             var totalInterest = await _context.RepaymentSchedules
+                .Where(r => r.Loan.Status == LoanStatus.Approved)
                 .SumAsync(r => (decimal?)r.InterestPortion) ?? 0;
+
 
             // 📊 Loan Analytics (group loans by month/year, format in memory)
             var loanAnalyticsRaw = await _context.Loans
